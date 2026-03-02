@@ -56,11 +56,12 @@
             height: 80vh;
             display: flex;
             align-items: center;
+            justify-content: center;
             text-align: center;
         }
 
         .hero-content {
-            width: 100%;
+            max-width: 800px;
         }
 
         .hero h1 {
@@ -87,6 +88,7 @@
             display: flex;
             gap: 30px;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .flex-column {
@@ -99,6 +101,11 @@
             padding: 20px;
             border-radius: 8px;
             flex: 1;
+            min-width: 250px;
+        }
+
+        .card p {
+            margin-top: 10px;
         }
 
         /* ====== CONTATO ====== */
@@ -171,6 +178,7 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
@@ -190,12 +198,10 @@
         <div class="container flex">
             <div>
                 <h2>Sobre a Escola</h2>
-                <p>O Curso de Idiomas já atua há mais de 10 anos.
-                Nossa metodologia é focada na conversação prática do idioma,
-                preparando nossos alunos para um aprendizado fácil, com aulas interativas.</p>
+                <p>O Curso de Idiomas já atua há mais de 10 anos. Nossa metodologia é focada na conversação prática do idioma, preparando nossos alunos para um aprendizado fácil, com aulas interativas.</p>
             </div>
             <div>
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" width="100%">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Sala de aula com alunos" width="100%">
             </div>
         </div>
     </section>
@@ -230,6 +236,31 @@
                 <div class="card">✔ Aulas presenciais e online</div>
                 <div class="card">✔ Material didático incluso</div>
                 <div class="card">✔ Certificado reconhecido</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="background:#f1f1f1;">
+        <div class="container flex flex-column">
+            <h2>Perguntas Frequentes</h2>
+            <div class="flex">
+                <div class="card">
+                    <strong>1. Quais idiomas vocês oferecem?</strong>
+                    <p>Oferecemos Inglês, Espanhol e Francês, do básico ao avançado.</p>
+                </div>
+                <div class="card">
+                    <strong>2. As aulas são presenciais ou online?</strong>
+                    <p>Nossos cursos podem ser feitos tanto presencialmente quanto online, de acordo com sua preferência.</p>
+                </div>
+                <div class="card">
+                    <strong>3. Preciso comprar material didático?</strong>
+                    <p>Não, todo material está incluso no curso.</p>
+                </div>
+                <div class="card">
+                    <strong>4. Receberei algum certificado?</strong>
+                    <p>Sim, todos os alunos recebem certificado reconhecido após conclusão do curso.</p>
+                </div>
             </div>
         </div>
     </section>
