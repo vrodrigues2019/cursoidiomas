@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Idiomas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* ====== MENU ====== */
+        header {
+            background-color: #1d3557;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* ====== HERO ====== */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover;
+            color: white;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e63946;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        /* ====== SEÇÕES ====== */
+        section {
+            padding: 60px 0;
+        }
+
+        .flex {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .flex-column {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .card {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+        }
+
+        /* ====== CONTATO ====== */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #1d3557;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ====== RESPONSIVO ====== */
+        @media (max-width: 768px) {
+
+            .menu {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero {
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <div class="container menu">
+            <h2>Curso de Idiomas</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Aprenda um novo idioma e transforme seu futuro!</h1>
+            <p>Inglês, Espanhol e Francês com metodologia moderna e professores experientes.</p>
+            <a href="#contato" class="btn">Quero me matricular</a>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div class="container flex">
+            <div>
+                <h2>Sobre a Escola</h2>
+                <p>O Curso de Idiomas já atua há mais de 10 anos.
+                Nossa metodologia é focada na conversação prática do idioma,
+                preparando nossos alunos para um aprendizado fácil, com aulas interativas.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section id="cursos" style="background:#f9f9f9;">
+        <div class="container flex flex-column">
+            <h2>Nossos Cursos</h2>
+            <div class="flex">
+                <div class="card">
+                    <h3>Inglês</h3>
+                    <p>Do básico ao avançado com foco em conversação.</p>
+                </div>
+                <div class="card">
+                    <h3>Espanhol</h3>
+                    <p>Aprenda rapidamente para viagens e negócios.</p>
+                </div>
+                <div class="card">
+                    <h3>Francês</h3>
+                    <p>Curso completo com certificação internacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VANTAGENS -->
+    <section id="vantagens">
+        <div class="container flex flex-column">
+            <h2>Por que escolher o Curso de Idiomas?</h2>
+            <div class="flex">
+                <div class="card">✔ Professores certificados</div>
+                <div class="card">✔ Aulas presenciais e online</div>
+                <div class="card">✔ Material didático incluso</div>
+                <div class="card">✔ Certificado reconhecido</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" style="background:#f9f9f9;">
+        <div class="container flex flex-column">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <input type="tel" placeholder="Seu telefone">
+                <textarea rows="4" placeholder="Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2026 Curso de Idiomas - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
